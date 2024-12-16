@@ -7,7 +7,7 @@ This repository contains all the files for WeSpace.
 
 ## Who built WeSpace?
 
-**WeSpace** WeSpace is being created by a small team of students, passionately collaborating on this side project.
+**WeSpace** is being created by a small team of students, passionately collaborating on this side project.
 
 ## How to collaborate?
 

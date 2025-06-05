@@ -30,7 +30,7 @@
   }
   .nav-icons i {
     font-size: 18px;
-    margin: 0 10px;
+    margin: 0 12px 0 0;
     color: #666;
     cursor: pointer;
   }
@@ -46,22 +46,25 @@
   .search-post-bar input {
     flex: 1;
     border: 1px solid #ddd;
-    border-radius: 20px;
+    border-radius: 20px 0 0 20px;
     padding: 8px 12px;
-    margin-right: 10px;
     font-size: 14px;
     outline: none;
+    border-right: none;
   }
   .search-post-bar button {
     border: none;
     background: #3b5998;
     color: #fff;
-    border-radius: 50%;
-    padding: 8px 12px;
+    border-radius: 0 20px 20px 0;
+    padding: 8px 15px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .search-post-bar button i {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   /* Posts */
@@ -116,41 +119,46 @@
   @media (max-width: 600px) {
     header {
       flex-direction: column;
-      align-items: center;
-      padding: 10px 0;
+      align-items: flex-start;
+      padding: 10px 20px;
       border-bottom: none;
     }
     .logo {
       font-size: 24px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       color: #3b5998;
     }
     .nav-icons {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
       width: 100%;
-      gap: 15px;
+      gap: 20px;
       border-top: 1px solid #ddd;
       padding-top: 10px;
+      margin-bottom: 10px;
     }
     .nav-icons i {
-      font-size: 24px;
+      font-size: 20px;
       margin: 0;
+      flex-shrink: 0;
     }
     .search-post-bar {
-      flex-direction: column;
+      flex-direction: row;
       padding: 10px 15px;
     }
     .search-post-bar input {
-      width: 100%;
-      margin: 0 0 10px 0;
+      border-radius: 20px 0 0 20px;
+      border-right: none;
+      flex: 1;
+      margin-right: 0;
     }
     .search-post-bar button {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
+      border-radius: 0 20px 20px 0;
+      width: 42px;
+      height: 38px;
       padding: 0;
+      flex-shrink: 0;
     }
   }
 </style>
@@ -193,7 +201,7 @@
   <div class="post">
     <div class="post-header">@SunChaser<span class="post-time"> 10 minutes ago</span></div>
     <div class="post-content">
-      What a beautiful day to explore the world HEHE!<br/>
+      What a beautiful day to explore the world!<br/>
       Chasing waves and stealing moments under the sun. 🌊
     </div>
     <div class="post-actions">

@@ -111,6 +111,48 @@
     color: #666;
     font-size: 12px;
   }
+
+  /* Mobile styles */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: none;
+    }
+    .logo {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #3b5998;
+    }
+    .nav-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 15px;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+    .nav-icons i {
+      font-size: 24px;
+      margin: 0;
+    }
+    .search-post-bar {
+      flex-direction: column;
+      padding: 10px 15px;
+    }
+    .search-post-bar input {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+    .search-post-bar button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      padding: 0;
+    }
+  }
 </style>
 </head>
 <body>
@@ -118,18 +160,18 @@
 <header>
   <div class="logo">WeSpace</div>
   <div class="nav-icons">
-    <i class="fas fa-home"></i>
-    <i class="fas fa-user-friends"></i>
-    <i class="fas fa-comment"></i>
-    <i class="fas fa-bell"></i>
-    <i class="fas fa-cog"></i>
-    <i class="fas fa-user"></i>
+    <i class="fas fa-home" title="Home"></i>
+    <i class="fas fa-user-friends" title="Friends"></i>
+    <i class="fas fa-comment" title="Messages"></i>
+    <i class="fas fa-bell" title="Notifications"></i>
+    <i class="fas fa-cog" title="Settings"></i>
+    <i class="fas fa-user" title="Profile"></i>
   </div>
 </header>
 
 <div class="search-post-bar">
   <input type="text" placeholder="Search..." />
-  <button><i class="fas fa-plus"></i></button>
+  <button type="button"><i class="fas fa-plus"></i></button>
 </div>
 
 <div class="posts">
@@ -141,14 +183,13 @@
     </div>
     <div class="post-actions">
       <div class="action-buttons">
-        <button><i class="far fa-thumbs-up"></i> Like</button>
-        <button><i class="far fa-comment"></i> Comment</button>
+        <button type="button"><i class="far fa-thumbs-up"></i> Like</button>
+        <button type="button"><i class="far fa-comment"></i> Comment</button>
       </div>
       <div class="like-count">86 Likes</div>
     </div>
   </div>
 
-  <!-- Repeat post structure for more posts -->
   <div class="post">
     <div class="post-header">@SunChaser<span class="post-time"> 10 minutes ago</span></div>
     <div class="post-content">
@@ -157,8 +198,8 @@
     </div>
     <div class="post-actions">
       <div class="action-buttons">
-        <button><i class="far fa-thumbs-up"></i> Like</button>
-        <button><i class="far fa-comment"></i> Comment</button>
+        <button type="button"><i class="far fa-thumbs-up"></i> Like</button>
+        <button type="button"><i class="far fa-comment"></i> Comment</button>
       </div>
       <div class="like-count">86 Likes</div>
     </div>

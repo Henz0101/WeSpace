@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WeSpace</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0;
+  }
+
+  /* Header */
+  header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  .logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3b5998;
+  }
+  .nav-icons i {
+    font-size: 18px;
+    margin: 0 10px;
+    color: #666;
+    cursor: pointer;
+  }
+
+  /* Search & Post Bar */
+  .search-post-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  .search-post-bar input {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 8px 12px;
+    margin-right: 10px;
+    font-size: 14px;
+    outline: none;
+  }
+  .search-post-bar button {
+    border: none;
+    background: #3b5998;
+    color: #fff;
+    border-radius: 50%;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  .search-post-bar button i {
+    font-size: 14px;
+  }
+
+  /* Posts */
+  .posts {
+    padding: 15px;
+  }
+  .post {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+    padding: 10px 15px;
+  }
+  .post-header {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .post-time {
+    font-size: 12px;
+    color: #888;
+    margin-left: 5px;
+  }
+  .post-content {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+  }
+  .action-buttons button {
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-right: 10px;
+  }
+  .action-buttons button i {
+    margin-right: 5px;
+  }
+  .like-count {
+    color: #666;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">WeSpace</div>
+  <div class="nav-icons">
+    <i class="fas fa-home"></i>
+    <i class="fas fa-user-friends"></i>
+    <i class="fas fa-comment"></i>
+    <i class="fas fa-bell"></i>
+    <i class="fas fa-cog"></i>
+    <i class="fas fa-user"></i>
+  </div>
+</header>
+
+<div class="search-post-bar">
+  <input type="text" placeholder="Search..." />
+  <button><i class="fas fa-plus"></i></button>
+</div>
+
+<div class="posts">
+  <div class="post">
+    <div class="post-header">@SunChaser<span class="post-time"> 5 minutes ago</span></div>
+    <div class="post-content">
+      What a beautiful day to explore the world!<br/>
+      Chasing waves and stealing moments under the sun. 🌊
+    </div>
+    <div class="post-actions">
+      <div class="action-buttons">
+        <button><i class="far fa-thumbs-up"></i> Like</button>
+        <button><i class="far fa-comment"></i> Comment</button>
+      </div>
+      <div class="like-count">86 Likes</div>
+    </div>
+  </div>
+
+  <!-- Repeat post structure for more posts -->
+  <div class="post">
+    <div class="post-header">@SunChaser<span class="post-time"> 10 minutes ago</span></div>
+    <div class="post-content">
+      What a beautiful day to explore the world!<br/>
+      Chasing waves and stealing moments under the sun. 🌊
+    </div>
+    <div class="post-actions">
+      <div class="action-buttons">
+        <button><i class="far fa-thumbs-up"></i> Like</button>
+        <button><i class="far fa-comment"></i> Comment</button>
+      </div>
+      <div class="like-count">86 Likes</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
